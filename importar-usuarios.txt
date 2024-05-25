@@ -1,0 +1,65 @@
+import axios from 'axios';
+import {useState, useEffect} from 'react';
+import loadert from './assets/loader.png';
+import './css/estilos.css';
+import Usuarios from './Components/usuario';
+//import img from './Components/imagenes'
+
+export const App = () =>{
+  const [users, setUsers] = useState([]);
+  const [loader, setLoader] = useState(false);
+  const [error, seterror] = useState(false);
+
+  const readData = async () => {
+    setLoader(true);
+    try{
+      //setTimeout(()=>{  },2000);
+      const data = await axios.get('https://jsonplaceholder.typicode.com/users');
+       setUsers(data.data);
+    }catch(error){
+      seterror(true);
+      console.log(error);
+    }finally{
+      console.log('acabo');
+      
+      setLoader(false);
+    }
+  };
+
+  useEffect(() =>{
+
+   readData();
+
+  }, [] );
+
+ // console.log('usuarios', users);
+ function getImg(u){
+  const image = u;
+  return image.split(" ").join('-');
+ }
+
+  return (
+      <main>
+        <h1 className='title'>LISTA DE TRABAJADORES</h1>
+        {loader && <img className='charge' src={loadert} alt='cargando' />}
+        {error && <p className="error">Error inesperado, lo sentimos</p> }
+        <section className='general'>
+        {users.map((user) => (
+              
+          <article className='card' key={user.id}>
+              <Usuarios 
+              nombre={user.name} 
+              correo={user.email} 
+              direccion={user.address.street}
+              cell={user.phone} 
+              web={user.website}   
+              imagen = {getImg(user.name)}                      
+              />
+          </article>    
+        ))}
+        </section>
+    </main>
+  );
+};
+
+export default App

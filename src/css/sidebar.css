@@ -1,0 +1,27 @@
+.sidebarOpen{
+    width: 300px;
+    height: 100vh;
+    background: #1d1d1d;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    transition-duration: .5s;
+}
+.boxlinks{padding-top: 30px;}
+.sidebar{
+    width: 0px;
+    height: 100vh;
+    background: #1d1d1d;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    z-index: 1000;
+    transition-duration: .5s;
+}
+.logoSidebar{padding: 40px 0;border-bottom: solid thin rgba(255,255,255,.1);}
+.logobar{
+    display: block;
+    width: 110px;
+    margin: 0 auto;
+}

@@ -1,0 +1,41 @@
+.productBox{display: flex;padding: 53px 0;}
+.productBox-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px;
+    height: 500px;
+}
+.produtPrice{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 15px;
+}
+.productDitails{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.productTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+.rating{color: rgb(255, 175, 2);}
+.productBox-details{
+    width: 50%;    
+    display: flex;
+    align-items: center;
+}
+
+.buy{
+    display: inline-block;
+    padding: 13px 30px;
+    border: none;
+    background: #ff8143;
+    color:#fff;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 15px;
+
+}

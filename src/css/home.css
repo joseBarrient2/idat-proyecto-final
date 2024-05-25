@@ -1,0 +1,41 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.firstContainer{width: 1200px;margin: 0 auto;}
+.footer{background: #666;}
+
+.boxFooter,.content-box,.banner{
+    width: 100%;
+}
+
+.boxFooter p{
+    text-align: center;
+    font-size: 16px;
+    padding: 2em 0;
+    color: #fff;
+}
+.charge{width: 50px;display: block;margin: 0 auto;}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid thin rgba(0, 0, 0, .3);
+}
+.product-title{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 0 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+.product-price{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 0;
+    text-align: center;
+}
+.banner img{width: 100%;margin-top: 91px;}
+

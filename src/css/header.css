@@ -1,0 +1,76 @@
+.header-box{
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    background: #fff;
+    border-bottom: solid thin rgba(0, 0, 0, 0.1);
+}
+.headermenu{max-width: 1200px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.headermenu svg{
+    font-size: 31px;
+    display: block;
+    cursor: pointer;
+    color: rgb(42, 42, 43);
+}
+.headermenu svg:hover{
+    color:#fd8244;
+}
+
+.boxlinks a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.boxlinks a:hover{
+    background: rgb(46, 46, 46);
+}
+.icon-car{position: relative;}
+.count{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+    right: -10px;
+    bottom: -9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.logo{width: 120px;}
+.logo img{display: block;width: 100%;}
+.carrito{cursor: pointer;}
+.boton_categoria{
+    display: flex;
+    padding: 5px 20px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 6px;
+    border: 0;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.boton_categoria:hover{
+  background: #fd8244;
+  color: #fff;
+}
+.filtro{
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+
